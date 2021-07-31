@@ -10,3 +10,9 @@ h2, h3 {
 h4 {
     color: red;
 }
+.welcome {
+    background-image: url("/assets/background\ image.jpg");
+    height: 300px;
+    color: #00FF00;
+    padding-top: 50px;
+}
