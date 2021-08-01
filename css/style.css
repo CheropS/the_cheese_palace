@@ -14,3 +14,13 @@ h4 {
     color: #00FF00;
     padding-top: 50px;
 }
+#show-order {
+    display: none;
+}
+.order {
+    cursor: pointer;
+    color: hotpink;
+}
+.order:hover {
+    text-decoration: underline;
+}
