@@ -90,7 +90,7 @@ $(document).ready(function() {
                 totalPrice=750; 
             }else if (pizzaSize=="small" && pizzaCrust=="stuffed" && pizzaToppings=="bbq chicken") {
                 totalPrice=750;
-            }else if (pizzaSize=="small" && pizzaCrust=="gluten-free" && pizzaToppings=="Pepperoni") {
+            }else if (pizzaSize=="small" && pizzaCrust=="gluten-free" && pizzaToppings=="bbq chicken") {
                 totalPrice=750;
             } else if (pizzaSize=="small" && pizzaCrust=="thin" && pizzaToppings=="hawaaian") {
                 totalPrice=700;
@@ -154,24 +154,56 @@ $(document).ready(function() {
                 totalPrice=950; 
             }else if (pizzaSize=="medium" && pizzaCrust=="stuffed" && pizzaToppings=="bbq chicken") {
                 totalPrice=950;
-            }else if (pizzaSize=="small" && pizzaCrust=="gluten-free" && pizzaToppings=="Pepperoni") {
-                totalPrice=750;
-            } else if (pizzaSize=="small" && pizzaCrust=="thin" && pizzaToppings=="hawaaian") {
-                totalPrice=700;
-            } else if (pizzaSize=="small" && pizzaCrust=="crispy" && pizzaToppings=="hawaaian") {
-                totalPrice=700; 
-            }else if (pizzaSize=="small" && pizzaCrust=="stuffed" && pizzaToppings=="hawaaian") {
-                totalPrice=700;
-            }else if (pizzaSize=="small" && pizzaCrust=="gluten-free" && pizzaToppings=="hawaaian") {
-                totalPrice=700;
-            }else if (pizzaSize=="small" && pizzaCrust=="thin" && pizzaToppings=="vegetable") {
-                totalPrice=600;
-            } else if (pizzaSize=="small" && pizzaCrust=="crispy" && pizzaToppings=="vegetable") {
-                totalPrice=600; 
-            }else if (pizzaSize=="small" && pizzaCrust=="stuffed" && pizzaToppings=="vegetable") {
-                totalPrice=600;
-            }else if (pizzaSize=="small" && pizzaCrust=="gluten-free" && pizzaToppings=="vegetable") {
-                totalPrice=600;
+            }else if (pizzaSize=="medium" && pizzaCrust=="gluten-free" && pizzaToppings=="bbq chicken") {
+                totalPrice=950;
+            } else if (pizzaSize=="medium" && pizzaCrust=="thin" && pizzaToppings=="hawaaian") {
+                totalPrice=900;
+            } else if (pizzaSize=="medium" && pizzaCrust=="crispy" && pizzaToppings=="hawaaian") {
+                totalPrice=900; 
+            }else if (pizzaSize=="medium" && pizzaCrust=="stuffed" && pizzaToppings=="hawaaian") {
+                totalPrice=900;
+            }else if (pizzaSize=="medium" && pizzaCrust=="gluten-free" && pizzaToppings=="hawaaian") {
+                totalPrice=900;
+            }else if (pizzaSize=="medium" && pizzaCrust=="thin" && pizzaToppings=="vegetable") {
+                totalPrice=800;
+            } else if (pizzaSize=="medium" && pizzaCrust=="crispy" && pizzaToppings=="vegetable") {
+                totalPrice=800; 
+            }else if (pizzaSize=="medium" && pizzaCrust=="stuffed" && pizzaToppings=="vegetable") {
+                totalPrice=800;
+            }else if (pizzaSize=="medium" && pizzaCrust=="gluten-free" && pizzaToppings=="vegetable") {
+                totalPrice=800;
+            } else if (pizzaSize=="large" && pizzaCrust=="thin" && pizzaToppings=="Pepperoni") {
+                totalPrice=1200;
+            } else if (pizzaSize=="large" && pizzaCrust=="crispy" && pizzaToppings=="Pepperoni") {
+                totalPrice=1200; 
+            }else if (pizzaSize=="large" && pizzaCrust=="stuffed" && pizzaToppings=="Pepperoni") {
+                totalPrice=1200;
+            }else if (pizzaSize=="large" && pizzaCrust=="gluten-free" && pizzaToppings=="Pepperoni") {
+                totalPrice=1200;
+            } else if (pizzaSize=="large" && pizzaCrust=="thin" && pizzaToppings=="bbq chicken") {
+                totalPrice=1150;
+            } else if (pizzaSize=="large" && pizzaCrust=="crispy" && pizzaToppings=="bbq chicken") {
+                totalPrice=1150; 
+            }else if (pizzaSize=="large" && pizzaCrust=="stuffed" && pizzaToppings=="bbq chicken") {
+                totalPrice=1150;
+            }else if (pizzaSize=="large" && pizzaCrust=="gluten-free" && pizzaToppings=="Pepperoni") {
+                totalPrice=1150;
+            } else if (pizzaSize=="large" && pizzaCrust=="thin" && pizzaToppings=="hawaaian") {
+                totalPrice=1100;
+            } else if (pizzaSize=="large" && pizzaCrust=="crispy" && pizzaToppings=="hawaaian") {
+                totalPrice=1100; 
+            }else if (pizzaSize=="large" && pizzaCrust=="stuffed" && pizzaToppings=="hawaaian") {
+                totalPrice=1100;
+            }else if (pizzaSize=="large" && pizzaCrust=="gluten-free" && pizzaToppings=="hawaaian") {
+                totalPrice=1100;
+            }else if (pizzaSize=="large" && pizzaCrust=="thin" && pizzaToppings=="vegetable") {
+                totalPrice=1000;
+            } else if (pizzaSize=="large" && pizzaCrust=="crispy" && pizzaToppings=="vegetable") {
+                totalPrice=1000; 
+            }else if (pizzaSize=="large" && pizzaCrust=="stuffed" && pizzaToppings=="vegetable") {
+                totalPrice=1000;
+            }else if (pizzaSize=="large" && pizzaCrust=="gluten-free" && pizzaToppings=="vegetable") {
+                totalPrice=1000;
             }
 
 
