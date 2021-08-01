@@ -17,10 +17,13 @@ h4 {
 #show-order {
     display: none;
 }
-.order {
+#orders {
     cursor: pointer;
-    color: hotpink;
+    color: #0088cc;
 }
-.order:hover {
+#orders:hover {
     text-decoration: underline;
+}
+.btn {
+    color: #00FF00;
 }
