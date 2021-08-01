@@ -16,7 +16,7 @@ Javascript and jQuery 3.6.0.
 
 ### Installing
 
-* The website is found by following the link: https://cherops.github.io/Delani-studio/
+* The website is found by following the link: https://cherops.github.io/the_cheese_palace/
 
 
 ## Issues 
