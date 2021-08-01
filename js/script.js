@@ -61,8 +61,9 @@ $(document).ready(function() {
             var selectedToppings=$(this).find("option.pizza-toppings").val();
 
             var newOrder=new Order (selectedSize, selectedCrust, selectedToppings);
+
             newContact.orders.push(newOrder);
-        })
+        });
 
         $("ul#orders").append("<li><span class='contact'>" + newContact.firstName + "</span></li>");
         
@@ -71,10 +72,17 @@ $(document).ready(function() {
             $("#show-order h3").text(newContact.firstName);
             $(".first-name").text(newContact.firstName);
             $(".last-name").text(newContact.lastName);
+            $("ul#pizzas").text("");
+            newContact.orders.forEach(function(order) {
+                $("ul#pizzas").append("li" + order.size + ", " + order.crust + " " + order.toppings + "</li>");
+            });
         });
 
         $("input#new-first-name").val("");
         $("input#new-last-name").val("");
+        $("option#pizza-size").val("");
+        $("option#pizza-crust").val("");
+        $("option#pizza-toppings").val("");
     });
 });
 
