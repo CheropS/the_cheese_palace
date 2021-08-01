@@ -1,7 +1,6 @@
 //business logic 
-function Contact(first, last) {
+function Contact(first) {
 this.firstName = first;
-this.lastName=last;
 }
 
 //user interface logic 
@@ -51,9 +50,8 @@ $(document).ready(function() {
         event.preventDefault();
 
         var inputtedFirstName=$("input#new-first-name").val();
-        var inputtedLastName=$("input#new-last-name").val();
 
-        var newContact=new Contact (inputtedFirstName, inputtedLastName);
+        var newContact=new Contact (inputtedFirstName);
 
         $("new-pizza-order").each(function() {
             var selectedSize=$(this).find("option.pizza-size").val();
@@ -65,24 +63,43 @@ $(document).ready(function() {
             newContact.orders.push(newOrder);
         });
 
-        $("ul#orders").append("<li><span class='contact'>" + newContact.firstName + "</span></li>");
+       
         
         $("#orders").last().click(function (){
             $("#show-order").show();
             $("#show-order h3").text(newContact.firstName);
             $(".first-name").text(newContact.firstName);
-            $(".last-name").text(newContact.lastName);
+            $(".first-name").val()
             $("ul#pizzas").text("");
-            newContact.orders.forEach(function(order) {
-                $("ul#pizzas").append("li" + order.size + ", " + order.crust + " " + order.toppings + "</li>");
-            });
+            let pizzaSize = $("#pizza-size option:selected").val();
+            let pizzaCrust= $("#pizza-crust option:selected").val();
+            let pizzaToppings= $("#pizza-toppings option:selected").val();
+            let totalPrice=0;
+
+            if (pizzaSize=="small" && pizzaCrust=="thin" && pizzaToppings=="Pepperoni") {
+                totalPrice=800;
+            } else if (pizzaSize=="small" && pizzaCrust=="crispy" && pizzaToppings=="Pepperoni") {
+                totalPrice=800; 
+            }else if (pizzaSize=="small" && pizzaCrust=="thin" && pizzaToppings=="Pepperoni") {
+                totalPrice=800;
+            }else if (pizzaSize=="small" && pizzaCrust=="thin" && pizzaToppings=="Pepperoni") {
+                totalPrice=800;
+
+
+            $("#show-order").append(pizzaSize + pizzaCrust + pizzaToppings);
+            $("#pizzas").append(totalPrice);
+
+            console.log(pizzaSize);
+            // newContact.orders.forEach(function(order) {
+            //     $("ul#pizzas").append("li" + pizzaSize + ", " + order.crust + " " + order.toppings + "</li>");
+            // });
         });
 
-        $("input#new-first-name").val("");
-        $("input#new-last-name").val("");
-        $("option#pizza-size").val("");
-        $("option#pizza-crust").val("");
-        $("option#pizza-toppings").val("");
+        let name = $("input#new-first-name").val();
+        newContact.firstName=name;
+        
+        
+        $("ul#orders").append("<li><span class='contact'>" + newContact.firstName + "</span></li>");
     });
 });
 
