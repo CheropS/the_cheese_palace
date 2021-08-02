@@ -209,7 +209,7 @@ $(document).ready(function() {
             var noofpizza=document.getElementById('noofpizza').value;
             $("#pizzas").append(pizzaSize + ", " + pizzaCrust + " " + pizzaToppings);
             $("#singlepizza").html('The price per pizza is: '+totalPrice);
-            $("#pprice").html('The total price is: '+totalPrice*noofpizza);
+            $("#pprice").html('The total price is: '+ totalPrice*noofpizza);
 
 
             // newContact.orders.forEach(function(order) {
