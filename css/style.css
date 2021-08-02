@@ -25,3 +25,6 @@ h4 {
 .btn {
     color: #00FF00;
 }
+#show-location {
+    display: none;
+}
