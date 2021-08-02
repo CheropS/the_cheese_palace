@@ -59,16 +59,12 @@
         <h2>Place an Order</h2>
         <div class="row">
             <div class="col-md-6">
-                <h3>Make a New Order:</h3>
+                <h3 style="text-align: center;">Make a New Order:</h3>
                 <form id="new-order">
                     <div class="form-group">
                         <label for="new-first-name">Name</label>
                         <input type="text" class="form-control" id="new-first-name">
                     </div>
-                    <!-- <div class="form-group">
-                        <label for="new-last-name">Last name</label>
-                        <input type="text" class="form-control" id="new-last-name">
-                      </div> -->
 
                     <div id="newOrders">
                         <div class="new-pizza-order">
@@ -93,7 +89,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="new-pizza-toppings">Select Pizza Toppings:</label>
-                                <select name="pizza-toppings" id="pizza-toppings" class="form-select">
+                                <select name="pizza-toppings" id="pizza-toppings" class="form-select"><br><br>
                                     <option value=" "></option>
                                     <option value="Pepperoni">Pepperoni</option>
                                     <option value="Hawaain">Hawaain</option>
@@ -104,7 +100,7 @@
                         </div>
 
                     </div>
-                    <button class="btn btn-primary" id="add-order">Another Order</button>
+                    <button class="btn btn-success" id="add-order">Another Order</button>
 
                     <button type="submit" class="btn">Add</button>
                 </form>

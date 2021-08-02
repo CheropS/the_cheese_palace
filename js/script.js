@@ -76,7 +76,7 @@ $(document).ready(function() {
             let pizzaToppings= $("#pizza-toppings option:selected").val();
             let totalPrice=0;
 
-            if (pizzaSize=="small" && pizzaCrust=="thin" && pizzaToppings=="Pepperoni") {
+            if (pizzaSize=="small" && pizzaCrust=="thin" || pizzaCrust=="crispy" || pizzaCrust=="stuffed" || pizzaCrust=="gluten-free" && pizzaToppings=="Pepperoni") {
                 totalPrice=800;
             } else if (pizzaSize=="small" && pizzaCrust=="crispy" && pizzaToppings=="Pepperoni") {
                 totalPrice=800; 
@@ -207,15 +207,12 @@ $(document).ready(function() {
             }
 
 
-
-
-            $("#show-order").append(pizzaSize + pizzaCrust + pizzaToppings);
+            $("#show-order").append(pizzaSize + ", " + pizzaCrust + " " + pizzaToppings);
             $("#pizzas").append(totalPrice);
 
-            console.log(pizzaSize);
-            // newContact.orders.forEach(function(order) {
-            //     $("ul#pizzas").append("li" + pizzaSize + ", " + order.crust + " " + order.toppings + "</li>");
-            // });
+            newContact.orders.forEach(function(order) {
+                $("ul#pizzas").append("li" + pizzaSize + ", " + pizzaCrust + " " + pizzaToppings + "</li>");
+            });
         });
 
         let name = $("input#new-first-name").val();
