@@ -206,13 +206,15 @@ $(document).ready(function() {
                 totalPrice=1000;
             }
 
+            var noofpizza=document.getElementById('noofpizza').value;
+            $("#pizzas").append(pizzaSize + ", " + pizzaCrust + " " + pizzaToppings);
+            $("#singlepizza").html('The price per pizza is: '+totalPrice);
+            $("#pprice").html('The total price is: '+totalPrice*noofpizza);
 
-            $("#show-order").append(pizzaSize + ", " + pizzaCrust + " " + pizzaToppings);
-            $("#pizzas").append(totalPrice);
 
-            newContact.orders.forEach(function(order) {
-                $("ul#pizzas").append("li" + pizzaSize + ", " + pizzaCrust + " " + pizzaToppings + "</li>");
-            });
+            // newContact.orders.forEach(function(order) {
+            //     $("ul#pizzas").append("li" + pizzaSize + ", " + pizzaCrust + " " + pizzaToppings + "</li>");
+            // });
         });
 
         let name = $("input#new-first-name").val();
@@ -221,5 +223,14 @@ $(document).ready(function() {
         
         $("ul#orders").append("<li><span class='contact'>" + newContact.firstName + "</span></li>");
     });
+    //to show delivery form
+    $('#hdeli-btn').click(function(){
+        $('#hdeliv').show();
+        
+    })
+    //to hide delivery details
+     $('#pick-btn').click(function(){
+        $('#hdeliv').hide();
+        
+    })
 });
-
