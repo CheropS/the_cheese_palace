@@ -98,7 +98,18 @@
                                 </select>
                             </div>
                         </div>
-
+                        <div id="hdeliv" style="display: none;">
+                            <label for="new-first-name">Address</label>
+                            <input type="text" class="form-control" id="new-first-name">
+                            <label for="new-first-name">Phone</label>
+                            <input type="number" class="form-control" id="new-first-name">
+                        </div>
+                        <!-- Addding number of pizzas -->
+                        <div class="form-group">
+                            <label for="new-first-name">No Of Pizza</label>
+                            <input type="number" class="form-control" id="noofpizza">
+                        </div>
+                        <!-- End of no of pizza -->
                     </div>
                     <button class="btn btn-success" id="add-order">Another Order</button>
 
@@ -118,7 +129,18 @@
                     <p>First name: <span class="first-name"></span></p>
                     <p>Pizza Orders:</p>
                     <ul id="pizzas">
-                    </ul>
+                    </ul> <br><br>
+
+                    <p id="pprice"></p><br>
+                    <p id="singlepizza"></p>
+
+                    <button type="button" style="color: white; margin-right: 10px;" id="hdeli-btn" class="btn btn-info">Home Delivery</button>
+                    <button type="button" style="color: white;" id="pick-btn" class="btn btn-warning">Pick Up</button>
+                </div>
+                <div id="show-location">
+                    <p>Location</p>
+                    <p>Number</p>
+
                 </div>
             </div>
         </div>
